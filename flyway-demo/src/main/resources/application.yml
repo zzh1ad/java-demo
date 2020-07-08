@@ -1,0 +1,19 @@
+# flyway
+spring:
+  flyway:
+    enabled: true
+    encoding: utf-8
+    locations: classpath:db/migration
+    table: schemas_version
+    baseline-on-migrate: true
+    validate-on-migrate: false
+  datasource:
+    url: jdbc:mysql://47.107.72.127:3306/flyway
+    username: root
+    password: 123456
+    hikari:
+      jdbc-url: jdbc:mysql://47.107.72.127:3306/flyway
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
