@@ -1,5 +1,6 @@
 #!/bin/sh
 git stash -qku
+cd manager-service || exit
 ./gradlew clean check
 RESULT=$?
 git stash pop -q
